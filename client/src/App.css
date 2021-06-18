@@ -1,0 +1,117 @@
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  html, body, #root {
+    height: 100%;
+    background-color: #F7FCF9;
+    color: #01110A;
+  } 
+  
+  .search-top {
+    background: rgba(47, 10, 40, 0.7);
+    background-image: url('./img/books_background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+  }
+  
+  .search-top h2 {
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+  }
+  
+  .search-top form.input-group {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+  }
+  
+  h1.headline {
+    font-family: 'Gochi Hand', cursive;
+  }
+  
+  .book-title {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 32px;
+    line-height: 2rem;
+  }
+  
+  .link-page {
+    font-family: 'Gochi Hand', cursive;
+    color: #D5F2E3;
+    font-size: 32px;
+    text-shadow: 0px 0px 15px rgba(0,0,0,0.7);
+  }
+  
+  .link-page:hover {
+    color: #9BB1A6;
+  }
+  
+  .link-page:active {
+    color: #9BB1A6;
+  }
+  
+  .book-authors span:first-child span {
+    display: none;
+  }
+  
+  
+  img.book-image {
+    max-height: 187px;
+    float: left;
+  }
+  
+  .book-deets {
+    background-color: #2E6147;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary {
+    background-color: #BA2D0B;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary:hover {
+    background-color: #771D08!important;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary:active {
+    background-color: #DF9F90!important;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-primary.disabled {
+    background-color: #300D04!important;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-secondary {
+    background-color: #73BA9B;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #548871!important;
+    border: none;
+    color: #FFFFFF;
+  }
+  
+  .btn-secondary:active {
+    background-color: #D8ECE3!important;
+    border: none;
+    color: #FFFFFF;
+  }

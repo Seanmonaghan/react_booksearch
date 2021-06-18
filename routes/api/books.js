@@ -1,16 +1,18 @@
 const router = require("express").Router();
-const booksController = require("../../controllers/booksController");
+const axios = require("axios");
+const booksController = require("../controllers/booksController");
 
-// Matches with "/api/books"
-router.route("/")
-  .get(booksController.findAll)
-  .post(booksController.create);
+router.get("/books/:id", (req,res) => {
+  const query = `https://www.googleapis.com/books/v1/volumes?q=${req.params.id}`;
 
-// Matches with "/api/books/:id"
-router
-  .route("/:id")
-  .get(booksController.findById)
-  .put(booksController.update)
-  .delete(booksController.remove);
+  axios.get(query)
+  .then(response => res.send(response.data))
+  .catch(err => res.status(404).send("Something went wrong"));
+});
+
+router.post("/saved", booksController.create);
+router.get("/saved", booksController.findAll);
+router.delete("/saved/:id", booksController.remove);
+
 
 module.exports = router;
