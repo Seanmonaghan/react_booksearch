@@ -16,10 +16,10 @@
   
   .search-top {
     background: rgba(47, 10, 40, 0.7);
-    background-image: url('./img/books_background.jpg');
+    background-image: url('./img/bannerBooks.jpg');
     background-size: cover;
     background-position: center;
-    color: #FFFFFF;
+    color: #474545;
   }
   
   .search-top h2 {

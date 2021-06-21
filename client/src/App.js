@@ -7,12 +7,14 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 function App() {
   return (
       <BrowserRouter>
+        <Switch >
         <Route exact path="/">
           <Search />
         </Route>
         <Route path="/saved">
           <Saved />
         </Route>
+        </Switch>
       </BrowserRouter>
   );
 }

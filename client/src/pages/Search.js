@@ -107,7 +107,7 @@ function Search() {
                                 <span className="sr-only">Loading...</span>
                             </div>
                         </div>
-                        <img src={require("../img/nothing.png")} style={{height: "250px"}} />
+                        <img src={require("../img/bannerBooks.jpg")} style={{height: "250px"}} />
                         <h1 className="text-center mt-3 headline" style={{color: "#3771c8"}}>No Books to Display</h1>
                     </div>
                     ) : (
