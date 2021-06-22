@@ -7,7 +7,7 @@ import Jumbotron from "../components/Jumbotron";
 
 
 class SearchBooks extends Component {
-    //create state
+
     state = {
         search: "",
         books: [],
@@ -15,26 +15,20 @@ class SearchBooks extends Component {
         message: ""
     };
 
-    //function to take value of what enter in the search bar
     handleInputChange = event => {
         this.setState({ search: event.target.value })
-    }
+    };
 
-    //function to control the submit button of the search form 
     handleFormSubmit = event => {
         event.preventDefault();
-        // once it clicks it connects to the google book api with the search value
         API.getGoogleSearchBooks(this.state.search)
             .then(res => {
                 if (res.data.items === "error") {
                     throw new Error(res.data.items);
                 }
                 else {
-                    // store response in a array
                     let results = res.data.items
-                    //map through the array 
                     results = results.map(result => {
-                        //store each book information in a new object 
                         result = {
                             key: result.id,
                             id: result.id,
@@ -46,7 +40,7 @@ class SearchBooks extends Component {
                         }
                         return result;
                     })
-                    // reset the sate of the empty books array to the new arrays of objects with properties geting back from the response
+                    
                     this.setState({ books: results, error: "" })
                 }
             })
@@ -54,21 +48,18 @@ class SearchBooks extends Component {
     }
 
     handleSavedButton = event => {
-        // console.log(event)
         event.preventDefault();
         console.log(this.state.books)
         let savedBooks = this.state.books.filter(book => book.id === event.target.id)
         savedBooks = savedBooks[0];
         API.saveBook(savedBooks)
-            .then(this.setState({ message: alert("Your book is saved") }))
+            .then(this.setState())
             .catch(err => console.log(err))
     }
     render() {
         return (
             <Container fluid>
-                <Jumbotron>
-                    <h1 className="text-white">Find Your Favorite Books with GoogleBook API</h1>
-                </Jumbotron>
+                <Jumbotron />
                 <Container>
                     <Row>
                         <Col size="12">
@@ -86,8 +77,6 @@ class SearchBooks extends Component {
             </Container>
         )
     }
-
-
 }
 
 export default SearchBooks;

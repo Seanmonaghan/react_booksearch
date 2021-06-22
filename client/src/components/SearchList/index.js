@@ -1,5 +1,7 @@
 import React from "react";
-import { Row, Col } from "../Grid"
+import { Row, Col } from "../Grid";
+import "./SearchList.css";
+import ReadMoreReact from "read-more-react";
 
 const SearchList = props => {
     return (props.books.length === 0) ? (
@@ -32,19 +34,19 @@ const SearchList = props => {
                                                     <h4 className="bookAuthor">{book.author}</h4>
                                                 </Row>
                                                 <Row>
-                                                    <p className="bookDescription">{book.description}</p>
+                                                    <ReadMoreReact text = {book.description} min = {350} ideal = {400} max = {450} readMoreText = {"Click to read more!"} />
                                                 </Row>
                                             </Col>
                                         </Row>
                                         <br></br>
-                                        <Row className="buttonDiv ">
-                                            <button className="saveBook btn btn-primary" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
+                                        <Row className="buttonDiv">
+                                            <button className="saveBook btn btn-info" id={book.id} onClick={(event) => props.handleSavedButton(event)}>
                                                 Save
                                         </button>
-                                            <a href={book.link} target="_blank">
+                                            <a href={book.link} target="_blank" rel="noopener noreferrer">
                                                 <button className="viewBook btn btn-success">
-                                                    View 
-                                        </button>
+                                                    View Online
+                                            </button>
                                             </a>
                                         </Row>
                                     </li>

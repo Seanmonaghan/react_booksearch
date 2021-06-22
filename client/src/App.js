@@ -4,7 +4,6 @@ import SearchBooks from './pages/SearchBooks';
 import SaveBooks from './pages/SaveBooks';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import './styles/css/styles.css'
 
 
 function App() {
