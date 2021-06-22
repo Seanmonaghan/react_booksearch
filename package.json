@@ -17,15 +17,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.18.7"
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.7"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
-    "mongoose": "^5.12.14",
-    "read-more-react": "^1.0.10"
+    "mongoose": "^5.12.14"
   }
 }

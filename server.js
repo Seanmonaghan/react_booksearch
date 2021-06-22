@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/reactBooks", {
+    useUnifiedTopology: true,
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,

@@ -7,7 +7,6 @@ import Jumbotron from "../components/Jumbotron";
 
 
 class SearchBooks extends Component {
-
     state = {
         search: "",
         books: [],
@@ -15,9 +14,11 @@ class SearchBooks extends Component {
         message: ""
     };
 
+
     handleInputChange = event => {
         this.setState({ search: event.target.value })
-    };
+    }
+
 
     handleFormSubmit = event => {
         event.preventDefault();
