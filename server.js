@@ -1,6 +1,6 @@
   
 const express = require("express");
-
+const path = require('path');
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
@@ -21,7 +21,12 @@ app.use(routes);
 
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/myReactreadingList"
+  process.env.MONGODB_URI || "mongodb://localhost/myReactreadingList", {
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+
+  }
 );
 
 // Start the API server
