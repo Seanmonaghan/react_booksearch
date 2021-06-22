@@ -1,6 +1,5 @@
 {
   "name": "booksearch",
-  "homepage": "https://github.com/seanmonaghan/react_booksearch#readme",
   "version": "1.0.0",
   "description": "React Book Search",
   "main": "server.js",
@@ -16,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mohak92/google-books-search-mern.git"
+    "url": "git+https://github.com/Seanmonaghan/react_booksearch.git"
   },
   "author": "",
   "license": "ISC",
