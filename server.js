@@ -18,8 +18,8 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/reactBooks", {
     useNewUrlParser: true,
     useFindAndModify: false,
-    // useCreateIndex: true,
-    // useFindAndModify: false
+    useCreateIndex: true,
+    useFindAndModify: false
   }
 );
 
