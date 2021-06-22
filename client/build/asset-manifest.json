@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.103fa33c.chunk.css",
+    "main.js": "/static/js/main.918a49b7.chunk.js",
+    "main.js.map": "/static/js/main.918a49b7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.992eac29.js",
+    "runtime-main.js.map": "/static/js/runtime-main.992eac29.js.map",
+    "static/js/2.28732be7.chunk.js": "/static/js/2.28732be7.chunk.js",
+    "static/js/2.28732be7.chunk.js.map": "/static/js/2.28732be7.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.f6cf6a0535f97f93158610d3e409daee.js": "/precache-manifest.f6cf6a0535f97f93158610d3e409daee.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.103fa33c.chunk.css.map": "/static/css/main.103fa33c.chunk.css.map",
+    "static/js/2.28732be7.chunk.js.LICENSE.txt": "/static/js/2.28732be7.chunk.js.LICENSE.txt",
+    "static/media/Jumbotron.css": "/static/media/bannerBooks.b34dfb8c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.992eac29.js",
+    "static/js/2.28732be7.chunk.js",
+    "static/css/main.103fa33c.chunk.css",
+    "static/js/main.918a49b7.chunk.js"
+  ]
+}
