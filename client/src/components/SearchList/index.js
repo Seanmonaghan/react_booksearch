@@ -1,7 +1,6 @@
 import React from "react";
 import { Row, Col } from "../Grid";
 import "./SearchList.css";
-import ReadMoreReact from "read-more-react";
 
 const SearchList = props => {
     return (props.books.length === 0) ? (
@@ -34,7 +33,7 @@ const SearchList = props => {
                                                     <h4 className="bookAuthor">{book.author}</h4>
                                                 </Row>
                                                 <Row>
-                                                <ReadMoreReact text={book.description} min = {250} ideal = {400} max = {500} readMoreText = "Click to read more!"/>
+                                                {book.description}
                                                 </Row>
                                             </Col>
                                         </Row>
